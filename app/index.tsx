@@ -43,7 +43,15 @@ export default function Index() {
             </TouchableOpacity>
         </View>
         {inputList.map((elemento,index)=>(
-          <View key={index}>
+          <View key={index} style={{paddingLeft: "3%",
+          display: "flex",
+          justifyContent: "center",
+           alignItems: "flex-start",
+           backgroundColor: "#ECEFF7",
+            borderRadius: 15,
+            height: "40%",
+            marginBottom: 10,
+            maxWidth:"80%"}}>
             {"Tarefa: "+ elemento.Tarefa}
             <br/>
             {"Data Criacao: "+ elemento.DataDeCriacao}
