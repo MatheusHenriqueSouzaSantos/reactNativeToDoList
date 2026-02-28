@@ -21,7 +21,7 @@ export default function Index() {
   return (
     <ScrollView
       style={{
-        backgroundColor: "skyblue"
+        backgroundColor: "#ECEFF7"
       }}
     >
         <View style={{display: "flex",flexDirection: "row"}}>
@@ -37,7 +37,7 @@ export default function Index() {
             />
             <TouchableOpacity
                 onPress={appendInput}
-                style={{ padding: 20, backgroundColor: "black", borderRadius: 10, marginLeft: 10, height: 40, justifyContent: "center" }}
+                style={{ padding: 20, backgroundColor: "#474747", borderRadius: 10, marginLeft: 10, height: 40, justifyContent: "center" }}
             >
                 <Text style={{ color: "white" }}>Adicionar Tarefa</Text>
             </TouchableOpacity>
@@ -47,14 +47,18 @@ export default function Index() {
           display: "flex",
           justifyContent: "center",
            alignItems: "flex-start",
-           backgroundColor: "#ECEFF7",
+           backgroundColor: "#474747",
             borderRadius: 15,
-            height: "40%",
+            height: 55,
+            width: 300,
             marginBottom: 10,
-            maxWidth:"80%"}}>
-            {"Tarefa: "+ elemento.Tarefa}
-            <br/>
-            {"Data Criacao: "+ elemento.DataDeCriacao}
+            }}>
+            <Text style={{color: "white"}}>
+              {"Tarefa: "+ elemento.Tarefa}
+            </Text> 
+            <Text style={{color: "white"}}>
+              {"Data Criacao: "+ elemento.DataDeCriacao}
+            </Text>
           </View>
         )
         )}
